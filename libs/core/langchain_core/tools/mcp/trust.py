@@ -102,8 +102,8 @@ class DominionObservatoryVerifier(TrustVerifier):
 
     Calls ``GET https://dominionobservatory.com/api/trust?url=<server_url>``
     and returns a `TrustScore` from the response JSON. Results are cached
-    per server URL for `ttl` seconds to stay within the 50 queries/day
-    free-tier limit.
+    per server URL for `ttl` seconds to stay within the 1,000 queries/day
+    free-tier limit (22,500+ MCP servers evaluated).
 
     Example:
         .. code-block:: python
